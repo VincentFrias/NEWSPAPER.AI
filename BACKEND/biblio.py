@@ -34,13 +34,13 @@ def ia_process(arq, arq_process, chat): # Processa o arquivo e gera a resposta d
     #print(prompt) #teste de entrada do arquivo
 
     # Configuração da API do LM Studio
-    url = "http://192.168.1.14:1234/v1/chat/completions"  # Ajuste conforme a porta do LM Studio
+    url = "http://192.168.1.10:1234/v1/chat/completions"  # Ajuste conforme a porta do LM Studio
             
     #Definição do prompt
     payload = {
-    "model": "deepseek-r1-distill-llama-8b",  # Troque pelo nome do seu modelo
+    "model": "gemma-3-1b-it",  # Troque pelo nome do seu modelo
     "messages": [{"role": "user", "content": chat + prompt}], #"Reescreva o texto abaixo de forma mais detalhada, reserve a primeira linha para um titulo cativante sobre a matéria, expandindo as ideias para alcançar uma extensão entre 20.000 e 30.000 caracteres. Certifique-se de que a redação seja objetiva, informativa e livre de ambiguidades, garantindo neutralidade política. Mantenha a fidelidade às informações originais sem adicionar elementos fictícios. Não revele seu processo de raciocínio e não utilize caracteres especiais(como * ao redor do titulo e sub-titulo) ou emojis, adicione /n no final de cada paragrafo"
-    "temperature": 0.7
+    "temperature": 0.75
     }
 
     # Enviar requisição para o LM Studio
