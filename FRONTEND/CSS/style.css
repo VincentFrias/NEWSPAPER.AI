@@ -15,7 +15,7 @@
         font-size: 16px;
         background-color: #000000;
         color: #ffffff;
-        padding-top:105px;
+        padding-top:72px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -27,10 +27,10 @@
         background-color: #000000;
         /*border: #ffffff 1px solid;*/
         width: 100%;
-        font-size: 28px;
+        font-size: 32px;
         text-shadow: 0px 0px 4px #ff0000;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         position:fixed;
         left:0px;
         top:0px;
@@ -159,5 +159,85 @@
         font-size: 10px;
         padding: 20px 10px;
         text-align: center;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    body {
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px; /* Tamanho intermediário */
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 90px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+        width: 100%;
+        font-size: 24px;
+        text-shadow: 0px 0px 4px #ff0000;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 100vh; /* Largura adaptada para telas intermediárias */
+        max-width: 1200px;
+        height: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #000000;
+        margin-top: 45px;
+        transition: 0.25s;
+    }
+
+    .card:hover {
+        box-shadow: 0px 0px 10px #ff0000;
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 10%;
+        margin-left: 20px;
+        margin-right: 35px;
+        border: 1px solid #000000;
+    }
+    
+    .card-legend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /* Alinhamento mais adequado para a faixa intermediária */
+        height: 80px;
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        width: 100%;
+        font-size: 12px;
+        text-shadow: 0px 0px 4px #ff0000;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
