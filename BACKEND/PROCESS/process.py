@@ -39,7 +39,7 @@ def main():
         request_site(arq, site)
 
         # Define o prompt para o modelo de linguagem
-        chat = "Reescreva o texto abaixo de forma mais detalhada e aprofundada, ampliando as ideias para atingir uma extensão entre 25.000 e 40.000 caracteres. Inicie o conteúdo com uma linha dedicada a um título cativante relacionado ao tema, sem utilizar subtítulos ao longo do texto. Mantenha a redação objetiva, informativa, clara e livre de ambiguidades, garantindo total neutralidade política. Preserve a fidelidade ao conteúdo original, sem incluir dados fictícios, opiniões pessoais ou informações não verificadas. Não explique seu processo de escrita em nenhum momento. Evite o uso de caracteres especiais, como asteriscos, travessões decorativos ou emojis. Ao final de cada parágrafo, adicione a marcação /n para indicar a quebra de parágrafo."
+        chat = "Reescreva o texto abaixo de forma mais detalhada e aprofundada, ampliando as ideias para atingir uma extensão entre 25.000 e 40.000 caracteres. Reserve a primeira linha a um título curto e cativante relacionado ao tema, sem utilizar subtítulos ao longo do texto. Mantenha a redação objetiva, informativa, clara e livre de ambiguidades, garantindo total neutralidade política. Preserve a fidelidade ao conteúdo original, sem incluir dados fictícios, opiniões pessoais ou informações não verificadas. Não explique seu processo de escrita em nenhum momento. Evite o uso de caracteres especiais, como asteriscos, travessões decorativos ou emojis. Ao final de cada parágrafo, adicione a marcação /n para indicar a quebra de parágrafo."
         
         # Chama a função para processar o arquivo e gerar a resposta do modelo
         ia_process(arq, arq_process, chat)
