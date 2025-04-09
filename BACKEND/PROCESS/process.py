@@ -6,22 +6,25 @@ from BACKEND.biblio import request_site, ia_process
 
 def main():
     
-    arquivos = ["C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/notice01.txt",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/notice02.txt",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/notice03.txt",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/notice04.txt",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/notice05.txt"]
+    arquivos = ["C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE01/",
+                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE02/",
+                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE03/",
+                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE04/",
+                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE05/"]
 
-    arquivos_process = ["C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/nt_process01.txt",
-                        "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/nt_process02.txt",
-                        "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/nt_process03.txt",
-                        "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/nt_process04.txt",
-                        "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/nt_process05.txt"]
+    arquivos_process = ["C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS01.txt",
+                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS02.txt",
+                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS03.txt",
+                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS04.txt",
+                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS05.txt"]
     
-    sites=["https://g1.globo.com/economia/noticia/2025/04/07/dolar-ibovespa.ghtml", "https://revistaquem.globo.com/saude/fitness/noticia/2025/04/maior-fisiculturista-da-atualidade-cbum-diz-que-fez-jejum-de-80-horas.ghtml",
-          "https://g1.globo.com/politica/noticia/2025/04/07/datafolha-56percent-sao-contra-anistia-36percent-sao-a-favor.ghtml",
-          "https://g1.globo.com/mg/sul-de-minas/noticia/2025/04/07/mulher-e-morta-com-pelo-menos-seis-tiros-em-itajuba-mg.ghtml",
-          "https://revistaquem.globo.com/saude/fitness/noticia/2025/04/maior-fisiculturista-da-atualidade-cbum-diz-que-fez-jejum-de-80-horas.ghtml"]
+    sites=[["https://g1.globo.com/economia/noticia/2025/04/09/china-anuncia-tarifas-de-mais-84percent-sobre-produtos-dos-eua.ghtml", 
+            "https://g1.globo.com/mundo/noticia/2025/04/09/governo-chines-emite-alerta-de-risco-para-viagens-aos-eua.ghtml", 
+            "https://g1.globo.com/economia/noticia/2025/04/09/tarifaco-de-trump-como-esta-a-fortuna-dos-homens-mais-ricos-do-mundo-desde-o-inicio-das-tarifas.ghtml"],
+            ["https://ge.globo.com/tenis/noticia/2025/04/09/ex-numero-1-do-mundo-aponta-habilidade-especial-de-joao-fonseca-abre-uma-caixa-de-pandora.ghtml"],
+            ["https://oglobo.globo.com/politica/noticia/2025/04/09/mais-de-70-deputados-de-partidos-da-base-de-lula-assinam-urgencia-da-anistia-do-8-de-janeiro.ghtml"],
+            ["https://g1.globo.com/pr/parana/noticia/2025/04/09/deputado-do-parana-ataca-roupas-de-deputada-apos-ela-protocolar-pedido-para-que-ele-perca-cargo-na-ccj-por-faltas-consecutivas.ghtml"],
+            ["https://oglobo.globo.com/cultura/noticia/2025/04/09/mickey-rourke-surge-irreconhecivel-em-big-brother-de-famosos-na-inglaterra-e-habitos-de-higiene-deixam-fas-enojados.ghtml"]]
 
     for i in range(len(arquivos)):
 
