@@ -13,7 +13,8 @@
     body{
         font-family: 'Rubik', sans-serif;
         font-size: 16px;
-        background-color: #000000;
+        /*background-color: #2a2a2a;*/
+        background: linear-gradient(to bottom, #000000, #2a2a2a);
         color: #ffffff;
         padding-top:72px;
         display: flex;
@@ -93,7 +94,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0);
         /*border: #ffffff 1px solid;*/
         width: 100%;
         font-size: 12px;
@@ -108,7 +109,7 @@
         font-size: 14px;
         padding-top: 80px;
         font-family: 'Rubik', sans-serif;
-        background-color: #000000;
+        background: linear-gradient(to bottom, #000000, #2a2a2a);
         color: #ffffff;
     }
 
@@ -118,7 +119,7 @@
         height: 50px;
         margin-top: -50px;
         text-align: center;
-        background-color: #000000;
+        background-color: #00000000;
         text-shadow: 0px 0px 4px #ff0000;
         color: #ffffff;
     }
@@ -166,7 +167,7 @@
     body {
         font-family: 'Rubik', sans-serif;
         font-size: 15px; /* Tamanho intermediário */
-        background-color: #000000;
+        background: linear-gradient(to bottom, #000000, #2a2a2a);
         color: #ffffff;
         padding-top: 90px;
         display: flex;
@@ -233,7 +234,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0);
         width: 100%;
         font-size: 12px;
         text-shadow: 0px 0px 4px #ff0000;

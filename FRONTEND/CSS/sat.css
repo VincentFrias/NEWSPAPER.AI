@@ -1,0 +1,78 @@
+/* Efeito de hover na card */
+.card:hover {
+    box-shadow: 0 0 10px #ff0000;
+    cursor: pointer;
+    transform: scale(1); /* Valor padrão; altere se desejar efeito de zoom */
+  }
+  
+  /* Estilização base da card */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 75vh;
+    margin-top: 70px;
+  }
+  
+  /* Estilização das imagens */
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-left: 20px;
+    margin-right: 35px;
+    border: 1px solid #000000;
+    margin-bottom: 25px;
+  }
+  h1{
+    margin-bottom: 25px;
+  }
+  
+  /* Estilização das legendas */
+  .legend {
+    color: #000000;
+    font-size: 20px;
+    text-shadow: 0 0 4px #565656;
+    font-weight: bold;
+  }
+  
+  /* Estilização do body */
+  body {
+    background-color: #000000;
+    background-image: none;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Media Query para telas até 1200px */
+  @media (max-width: 1200px) {
+    .card {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .legend {
+      font-size: 16px;
+    }
+  }
+  
+  /* Media Query para telas até 800px */
+  @media (max-width: 800px) {
+    .card {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+    }
+    .legend {
+      font-size: 16px;
+    }
+  }
+  
