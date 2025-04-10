@@ -12,7 +12,7 @@
 @media (min-width: 1200px) {
     body{
         font-family: 'Rubik', sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         /*background-color: #2a2a2a;*/
         background: linear-gradient(to bottom, #000000, rgb(59, 59, 59));
         color: #ffffff;
@@ -41,6 +41,7 @@
     .card{
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: #ffffff;
         border-radius: 10px;
         width: 1200px;
@@ -82,7 +83,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:baseline;
+        align-items:center;
         height: auto;
         min-height: 80px;
         width: 1fr;
@@ -117,17 +118,20 @@
 
 @media (max-width: 800px) {
     body {
-        font-size: 14px;
+        font-size: 10px;
         padding-top: 80px;
         font-family: 'Rubik', sans-serif;
         background: linear-gradient(to bottom, #000000, #2a2a2a);
         color: #ffffff;
+        height: 100%;
+        min-height: 100vh;
     }
 
     header {
         font-size: 20px;
         padding-bottom: 10px;
         height: 50px;
+        width: 100%;
         margin-top: -50px;
         text-align: center;
         background-color: #00000000;
@@ -142,7 +146,7 @@
         align-items: center;
         width: 90%;
         height: auto;
-        padding-top: 15px;
+        padding: 20px 10px;
         margin-top: 30px;
         margin-left:5%;
         background-color: #ffffff;
@@ -177,13 +181,14 @@
 @media (min-width: 800px) and (max-width: 1200px) {
     body {
         font-family: 'Rubik', sans-serif;
-        font-size: 15px; /* Tamanho intermediário */
+        font-size: 16px; /* Tamanho intermediário */
         background: linear-gradient(to bottom, #000000, #2a2a2a);
         color: #ffffff;
         padding-top: 90px;
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        justify-items: center;
     }
 
     header {
@@ -204,16 +209,16 @@
     .card {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: #ffffff;
         border-radius: 10px;
-        width: 100vh; /* Largura adaptada para telas intermediárias */
-        max-width: 1200px;
+        width: 90%; /* Largura adaptada para telas intermediárias */
         height: 100px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 15px;
         color: #000000;
         margin-top: 45px;
         transition: 0.25s;
+        margin-left: 5%;
     }
 
     .card:hover {
@@ -235,7 +240,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start; /* Alinhamento mais adequado para a faixa intermediária */
+        align-items: center; /* Alinhamento mais adequado para a faixa intermediária */
         height: auto;
         min-height: 80px;
         width: 100%;

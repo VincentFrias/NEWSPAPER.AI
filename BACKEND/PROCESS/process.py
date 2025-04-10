@@ -18,6 +18,7 @@ def main():
                       "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS04.txt",
                       "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS05.txt"]
     
+
     sites=[["https://oglobo.globo.com/economia/noticia/2025/04/10/casa-branca-confirma-que-tarifa-americana-para-china-sera-de-145percent.ghtml","https://www.infomoney.com.br/economia/tarifa-total-sobre-a-china-vai-a-145-diz-casa-branca/","https://www.cnnbrasil.com.br/economia/macroeconomia/casa-branca-esclarece-que-tarifas-sobre-a-china-chegam-a-145/"],
             ["https://g1.globo.com/politica/noticia/2025/04/10/com-habeas-corpus-deolane-diz-que-nao-vai-comparecer-a-cpi-das-bets-nesta-quinta.ghtml","https://www.poder360.com.br/poder-justica/mendonca-barra-depoimento-de-deolane-na-cpi-das-bets/","https://www.cnnbrasil.com.br/politica/deolane-consegue-habeas-corpus-e-e-liberada-de-comparecer-na-cpi-das-bets/"],
             ["https://noticias.uol.com.br/politica/ultimas-noticias/2025/04/10/operacao-pf-sorocaba-desvio-recursos-publicos.htm","https://valor.globo.com/politica/noticia/2025/04/10/prefeito-tiktoker-de-sorocaba-faz-video-ironizando-operacao-da-pf-veja-o-video.ghtml","https://valor.globo.com/politica/noticia/2025/04/10/prefeito-tiktoker-de-sorocaba-faz-video-ironizando-operacao-da-pf-veja-o-video.ghtml"],
@@ -38,8 +39,7 @@ def main():
 
         # Define o prompt para o modelo de linguagem
         chat = "Reescreva o texto abaixo de forma mais detalhada e aprofundada, ampliando as ideias para atingir uma extensão entre 25.000 e 40.000 caracteres. Reserve a primeira linha a um título curto e cativante relacionado ao tema, sem utilizar subtítulos ao longo do texto. Mantenha a redação objetiva, informativa, clara e livre de ambiguidades, garantindo total neutralidade política. Preserve a fidelidade ao conteúdo original, sem incluir dados fictícios, opiniões pessoais ou informações não verificadas. Não explique seu processo de escrita em nenhum momento. Evite o uso de caracteres especiais, como asteriscos, travessões decorativos ou emojis. Ao final de cada parágrafo, adicione a marcação /n para indicar a quebra de parágrafo."
-        
-        # Chama a função para processar o arquivo e gerar a resposta do modelo
+       # Chama a função para processar o arquivo e gerar a resposta do modelo
         ia_process(arq, arq_process, chat)
 
 main()
