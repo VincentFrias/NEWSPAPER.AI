@@ -4,6 +4,11 @@ import os
 import glob
 from bs4 import BeautifulSoup
 
+tag_html=["h1", "h2", "p", "article", "div", "section"] # Tags HTML que serão utilizadas para buscar os elementos no HTML
+class_title_html=["content-head__title", "text-3xl md:text-5xl font-bold tracking-tighter text-wl-neutral-950","single-header__title", "inner-page-section__title title-1", "title"]
+class_subtitle_html=["content-head__subtitle","text-lg md:text-xl font-medium tracking-tight text-wl-neutral-600","single-header__excerpt", "inner-page-section__line","solar-author-origin has-authors", "description"]
+class_materia_html=["content-text__container","im-article clear-fix","single-content","inner-page-section__section","bullet","content"]
+
 def request_site(arq, site): # Seleciona o diretório e Grava conforme o HTML
     
     for i in range(len(site)):
@@ -16,9 +21,9 @@ def request_site(arq, site): # Seleciona o diretório e Grava conforme o HTML
         url = site[i] # 'https://g1.globo.com/politica/noticia/2025/03/19/stf-tem-maioria-para-manter-dino-zanin-e-moraes-em-julgamento-de-denuncia-de-golpe-contra-bolsonaro-e-aliados.ghtml'
         request = requests.get(url)
         soup = BeautifulSoup(request.text, 'html.parser')
-        titulo=soup.find('h1', class_="content-head__title")  
-        sub_titulo=soup.find('h2', class_="content-head__subtitle")
-    
+        titulo=soup.find(tag_html, class_=class_title_html)  
+        sub_titulo=soup.find(tag_html, class_=class_subtitle_html)
+
         # Abre o arquivo para escrita
         # Escreve o título e o subtítulo   
         with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
@@ -27,7 +32,7 @@ def request_site(arq, site): # Seleciona o diretório e Grava conforme o HTML
     
             # Chama os parágrafos de MATERIAS
             # Grava os MATERIAS no arquivo TXT
-            materias = soup.find_all('p', class_="content-text__container")
+            materias = soup.find_all(tag_html, class_=class_materia_html)
             for m in materias:
                 arquivo.write(m.text + "\n")
 
