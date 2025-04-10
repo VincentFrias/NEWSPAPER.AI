@@ -18,13 +18,11 @@ def main():
                       "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS04.txt",
                       "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS05.txt"]
     
-    sites=[["https://g1.globo.com/economia/noticia/2025/04/09/china-anuncia-tarifas-de-mais-84percent-sobre-produtos-dos-eua.ghtml", 
-            "https://g1.globo.com/mundo/noticia/2025/04/09/governo-chines-emite-alerta-de-risco-para-viagens-aos-eua.ghtml", 
-            "https://g1.globo.com/economia/noticia/2025/04/09/tarifaco-de-trump-como-esta-a-fortuna-dos-homens-mais-ricos-do-mundo-desde-o-inicio-das-tarifas.ghtml"],
-            ["https://ge.globo.com/tenis/noticia/2025/04/09/ex-numero-1-do-mundo-aponta-habilidade-especial-de-joao-fonseca-abre-uma-caixa-de-pandora.ghtml"],
-            ["https://oglobo.globo.com/politica/noticia/2025/04/09/mais-de-70-deputados-de-partidos-da-base-de-lula-assinam-urgencia-da-anistia-do-8-de-janeiro.ghtml"],
-            ["https://g1.globo.com/pr/parana/noticia/2025/04/09/deputado-do-parana-ataca-roupas-de-deputada-apos-ela-protocolar-pedido-para-que-ele-perca-cargo-na-ccj-por-faltas-consecutivas.ghtml"],
-            ["https://oglobo.globo.com/cultura/noticia/2025/04/09/mickey-rourke-surge-irreconhecivel-em-big-brother-de-famosos-na-inglaterra-e-habitos-de-higiene-deixam-fas-enojados.ghtml"]]
+    sites=[["https://oglobo.globo.com/economia/noticia/2025/04/10/casa-branca-confirma-que-tarifa-americana-para-china-sera-de-145percent.ghtml","https://www.infomoney.com.br/economia/tarifa-total-sobre-a-china-vai-a-145-diz-casa-branca/","https://www.cnnbrasil.com.br/economia/macroeconomia/casa-branca-esclarece-que-tarifas-sobre-a-china-chegam-a-145/"],
+            ["https://g1.globo.com/politica/noticia/2025/04/10/com-habeas-corpus-deolane-diz-que-nao-vai-comparecer-a-cpi-das-bets-nesta-quinta.ghtml","https://www.poder360.com.br/poder-justica/mendonca-barra-depoimento-de-deolane-na-cpi-das-bets/","https://www.cnnbrasil.com.br/politica/deolane-consegue-habeas-corpus-e-e-liberada-de-comparecer-na-cpi-das-bets/"],
+            ["https://noticias.uol.com.br/politica/ultimas-noticias/2025/04/10/operacao-pf-sorocaba-desvio-recursos-publicos.htm","https://valor.globo.com/politica/noticia/2025/04/10/prefeito-tiktoker-de-sorocaba-faz-video-ironizando-operacao-da-pf-veja-o-video.ghtml","https://valor.globo.com/politica/noticia/2025/04/10/prefeito-tiktoker-de-sorocaba-faz-video-ironizando-operacao-da-pf-veja-o-video.ghtml"],
+            ["https://valor.globo.com/financas/ao-vivo/2023/06/16/dolar-avanca-e-ibovespa-recua-em-dia-de-correcao-siga-os-mercados.ghtml","https://veja.abril.com.br/economia/bolsa-dispara-e-dolar-desaba-apos-trump-interromper-tarifas-reciprocas-aos-paises/","https://www.infomoney.com.br/mercados/yuan-cai-ao-menor-nivel-frente-ao-dolar-desde-2007/"],
+            ["https://www.cnnbrasil.com.br/politica/bolsonaro-e-hugo-motta-se-encontram-em-brasilia-para-discutir-anistia/","https://g1.globo.com/politica/blog/andreia-sadi/post/2025/04/10/bolsonaro-hugo-motta-bastidores-anistia.ghtml","https://veja.abril.com.br/coluna/maquiavel/o-placar-atualizado-de-deputados-que-apoiam-a-urgencia-a-anistia-na-camara/"]]
 
     for i in range(len(arquivos)):
 

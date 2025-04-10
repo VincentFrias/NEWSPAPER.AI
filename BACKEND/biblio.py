@@ -59,6 +59,7 @@ def ia_process(arq, arq_process, chat): # Processa o arquivo e gera a resposta d
     response = requests.post(url, json=payload)
 
     texto_filtrado = re.sub(r'<think>.*?</think>', '', response.json()["choices"][0]["message"]["content"], flags=re.DOTALL)
+    texto_filtrado = re.sub(r'\*', '', texto_filtrado)
     texto_final = "\n".join([linha for linha in texto_filtrado.splitlines() if linha.strip()])
 
 
