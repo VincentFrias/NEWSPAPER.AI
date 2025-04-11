@@ -6,17 +6,17 @@ from BACKEND.biblio import request_site, ia_process
 
 def main():
     
-    arquivos = ["C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE01/",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE02/",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE03/",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE04/",
-                "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/NOTICE05/"]
+        arquivos = ["../FILES/NOTICE01/",
+                "../FILES/NOTICE02/",
+                "../FILES/NOTICE03/",
+                "../FILES/NOTICE04/",
+                "../FILES/NOTICE05/"]
 
-    arquivos_process = ["C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS01.txt",
-                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS02.txt",
-                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS03.txt",
-                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS04.txt",
-                      "C:/Users/buzof/Desktop/Programas/SPARROW/BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS05.txt"]
+    arquivos_process = ["../FILES/FILES_PROCESS/NOTICE_PROCESS01.txt",
+                        "../FILES/FILES_PROCESS/NOTICE_PROCESS02.txt",
+                        "../FILES/FILES_PROCESS/NOTICE_PROCESS03.txt",
+                        "../FILES/FILES_PROCESS/NOTICE_PROCESS04.txt",
+                        "../FILES/FILES_PROCESS/NOTICE_PROCESS05.txt"]
     
 
     sites=[["https://oglobo.globo.com/economia/noticia/2025/04/10/casa-branca-confirma-que-tarifa-americana-para-china-sera-de-145percent.ghtml","https://www.infomoney.com.br/economia/tarifa-total-sobre-a-china-vai-a-145-diz-casa-branca/","https://www.cnnbrasil.com.br/economia/macroeconomia/casa-branca-esclarece-que-tarifas-sobre-a-china-chegam-a-145/"],
