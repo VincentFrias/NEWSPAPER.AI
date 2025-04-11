@@ -12,35 +12,35 @@
     </header>
 
     <main> 
-        <a href="FRONTEND/SAT/sat01.html"><div class="card" id="card01">
+        <a href="./FRONTEND/SAT/sat01.html"><div class="card" id="card01">
             <!--<img src="" alt="Imagem do card01">-->
             <div class="card-legend">
                 <h2 id="title-notice 01">Noticia 01</h2>
                 <!--<p id="subtitle-notice 01">Esse é o resumo da noticia 01</p>-->
             </div>
         </div></a>
-        <a href="FRONTEND/SAT/sat02.html"><div class="card" id="card02">
+        <a href="./FRONTEND/SAT/sat02.html"><div class="card" id="card02">
             <!--<img src="" alt="Imagem do card02">-->
             <div class="card-legend">
                 <h2 id="title-notice 02">Noticia 2</h2>
                 <!--<p id="subtitle-notice 02">Esse é o resumo da noticia 02</p>-->
             </div>
         </div></a>
-        <a href="FRONTEND/SAT/sat03.html"><div class="card" id="card03">
+        <a href="./FRONTEND/SAT/sat03.html"><div class="card" id="card03">
             <!--<img src="" alt="Imagem do card03">-->
             <div class="card-legend">
                 <h2 id="title-notice 03">Noticia 3</h2>
                 <!--<p id="subtitle-notice 03">Esse é o resumo da noticia 03</p>-->
             </div>
         </div></a>
-        <a href="FRONTEND/SAT/sat04.html"><div class="card" id="card04">
+        <a href="./FRONTEND/SAT/sat04.html"><div class="card" id="card04">
             <!--<img src="" alt="Imagem do card04">-->
             <div class="card-legend">
                 <h2 id="title-notice 04">Noticia 4</h2>
                 <!--<p id="subtitle-notice 04">Esse é o resumo da noticia 04</p>-->
             </div>
         </div></a>
-        <a href="FRONTEND/SAT/sat05.html"><div class="card" id="card05">
+        <a href="./FRONTEND/SAT/sat05.html"><div class="card" id="card05">
             <!--<img src="" alt="Imagem do card05">-->
             <div class="card-legend">
                 <h2 id="title-notice 05">Noticia 5</h2>
@@ -55,31 +55,31 @@
     </footer>
 
     <script>
-        fetch('BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS01.txt')
+        fetch('./BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS01.txt')
             .then(response => response.text())
             .then(text => {
                 const lines = text.split('\n');
                 document.getElementById('title-notice 01').textContent = lines[0] || "Título não disponível";
             })
-        fetch('BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS02.txt')
+        fetch('./BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS02.txt')
             .then(response => response.text())
             .then(text => {
                 const lines = text.split('\n');
                 document.getElementById('title-notice 02').textContent = lines[0] || "Título não disponível";
             })
-        fetch('BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS03.txt')
+        fetch('./BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS03.txt')
             .then(response => response.text())
             .then(text => {
                 const lines = text.split('\n');
                 document.getElementById('title-notice 03').textContent = lines[0] || "Título não disponível";
             })
-        fetch('BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS04.txt')
+        fetch('./BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS04.txt')
             .then(response => response.text())
             .then(text => {
                 const lines = text.split('\n');
                 document.getElementById('title-notice 04').textContent = lines[0] || "Título não disponível";
             })
-        fetch('BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS05.txt')
+        fetch('./BACKEND/FILES/FILES_PROCESS/NOTICE_PROCESS05.txt')
             .then(response => response.text())
             .then(text => {
                 const lines = text.split('\n');
