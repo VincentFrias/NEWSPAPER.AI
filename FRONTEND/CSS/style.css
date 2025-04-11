@@ -67,17 +67,6 @@
         margin-right: 35px;
         border: #000000 1px solid;
     }
-
-    #card05  img{
-        width: 75px;
-        height: 75px;
-        border-radius: 10%;
-        margin-left: 20px;
-        margin-right: 35px;
-        margin-top: -10px;
-        margin-bottom: 10px;
-        border: #000000 1px solid;
-    }
     
     .card-legend{
         display: flex;
@@ -87,18 +76,6 @@
         height: auto;
         min-height: 80px;
         width: 1fr;
-    }
-
-    #card05{
-        display: flex;
-        align-items: center;
-        background-color: #ffffff;
-        border-radius: 10px;
-        width: 1200px;
-        height: 100px;
-        padding-bottom: 20px;
-        color: #000000;
-        margin-top:45px;
     }
     
     footer{
